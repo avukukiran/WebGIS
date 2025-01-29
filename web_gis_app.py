@@ -39,6 +39,6 @@ m = leafmap.Map(center=[lat, lon], zoom=zoom)
 # Add basemap options
 m.add_vector_tile_layer("http://localhost:8088/geoserver/spatial/wms?version=1.3.0&layers=spatial:states",None,"States")
 basemap = st.sidebar.selectbox("Choose a basemap:", leafmap.basemaps)
-m.add_basemap(basemap)
+m.add_basemap(basemap='HYBRID')
 # Display the map
 m.to_streamlit(height=500)
