@@ -8,22 +8,22 @@ st.title("Web GIS Application")
 st.write("Explore interactive maps with this simple Web GIS tool!")
 
 # Add custom CSS for padding and height
-# custom_css = """  <style>
-#     /* Set padding for the main content */
-#     .main {
-#         padding: 10px 10px 10px 10px; /* Top-Bottom, Left-Right */
-#         # gap:10px;
-#     }
-#     .st-emotion-cache-fn1920 {
-#         gap:1px;
-#     }
-#     /* Adjust the height of the Streamlit app container */
-#     .css-1y0tads {
-#         min-height: 100vh; /* Full viewport height */
-#     }
-#     </style>
-# """
-# st.markdown(custom_css, unsafe_allow_html=True)
+custom_css = """  <style>
+    /* Set padding for the main content */
+    .main {
+        padding: 10px 10px 10px 10px; /* Top-Bottom, Left-Right */
+        # gap:10px;
+    }
+    .st-emotion-cache-fn1920 {
+        gap:1px;
+    }
+    /* Adjust the height of the Streamlit app container */
+    .css-1y0tads {
+        min-height: 100vh; /* Full viewport height */
+    }
+    </style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
 
 # Sidebar for user input
 st.sidebar.header("Map Settings")
